@@ -14,7 +14,7 @@ html {
 /* Header */
 
 .bg-image {
-    background-image: url('./images/hero-bg2.png');
+    background-image: url('/flexbox-business-site/images/hero-bg2.png');
     background-size: cover;
 }
 
@@ -198,7 +198,7 @@ html {
 /* Team Section */
 
 .team {
-    background-image: url('./images/team-bg.jpg');
+    background-image: url('/flexbox-business-site/images/team-bg.jpg');
     background-size: cover;
     height: 90vh;
     margin-bottom: 8rem;
