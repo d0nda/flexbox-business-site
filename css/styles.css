@@ -272,7 +272,7 @@ footer  p {
 @media only screen and (max-width: 480px) {
     /* Header */
     .bg-image {
-        background-image: url('/images/hero-bg2.png');
+        background-image: url('/flexbox-business-site/images/hero-bg2.png');
         background-size: cover;
         padding-bottom: 1rem;
     }
@@ -536,7 +536,7 @@ footer  p {
 @media only screen and (max-width: 640px) {
      /* Header */
      .bg-image {
-        background-image: url('/images/hero-bg2.png');
+        background-image: url('/flexbox-business-site/images/hero-bg2.png');
         background-size: cover;
         padding-bottom: 1rem;
     }
@@ -729,7 +729,7 @@ footer  p {
     /* Team Section */
 
     .team {
-        background-image: url('/images/team-bg.jpg');
+        background-image: url('/flexbox-business-site/images/team-bg.jpg');
         background-size: cover;
         height: 125vh;
         margin-bottom: 8rem;
@@ -804,7 +804,7 @@ footer  p {
 @media only screen and (max-width: 860px) {
     /* Header */
     .bg-image {
-       background-image: url('/images/hero-bg2.png');
+       background-image: url('/flexbox-business-site/images/hero-bg2.png');
        background-size: cover;
        padding-bottom: 1rem;
    }
@@ -997,7 +997,7 @@ footer  p {
    /* Team Section */
 
    .team {
-       background-image: url('/images/team-bg.jpg');
+       background-image: url('/flexbox-business-site/images/team-bg.jpg');
        background-size: cover;
        height: 125vh;
        margin-bottom: 8rem;
