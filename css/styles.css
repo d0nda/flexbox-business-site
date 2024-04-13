@@ -7,6 +7,7 @@ html {
 
 .divide {
     margin: 0 auto;
+    margin-bottom: 20px;
     border-bottom: 1px solid white;
     max-width: 80%;
 }
@@ -20,6 +21,8 @@ html {
 
 .header-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
     justify-content: space-between;
     padding: 2rem; 
     border-bottom: 1px solid white;
@@ -154,7 +157,12 @@ html {
 /*  Investment */
 
 .investment {
+    flex-wrap: wrap;
     margin-bottom: 8rem;
+}
+
+.investment-card {
+    margin: 1rem;
 }
 
 .investment h1 {
@@ -186,6 +194,7 @@ html {
 .global-content {
     display: flex;
     justify-content: center;
+    margin: 2rem;
 }
 
 .global .divide {
@@ -204,9 +213,9 @@ html {
     margin-bottom: 8rem;
 }
 
-
 .team-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     
 }
@@ -226,7 +235,6 @@ html {
 }
 
 .team-member img {
-    margin: 0 auto;
     margin-bottom: 1rem;
     height: 50vh;
     
@@ -260,3 +268,798 @@ footer  p {
 
 
 /* media queries */
+
+@media only screen and (max-width: 480px) {
+    /* Header */
+    .bg-image {
+        background-image: url('/images/hero-bg2.png');
+        background-size: cover;
+        padding-bottom: 1rem;
+    }
+
+    .logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    .header-container {
+        flex: 1 0 8rem;
+        justify-content: space-evenly;
+        padding: 1rem; 
+        border-bottom: 1px solid white;
+    }
+
+    .header-container a:hover {
+        color: #c4c8ce;
+    }
+    
+    
+    .getstarted-btn {
+        padding: 10px 10px;
+        background-color: #ffffff;
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .getstarted-btn:hover {
+        background-color: #6ea2db;
+    }
+
+
+    /* Hero section */
+    .hero-section {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .hero-content {
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    .hero-content img {
+        width: 100%;
+    }
+    
+    .content-text {
+        margin-left: 1.1rem;
+        margin-right: 1.1rem;
+        margin-top:  3rem;
+    }
+    
+    .content-text h1, p {
+        color: white;
+    }
+    
+    .content-text h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+    }
+    
+    .content-text p {
+        font-size: 15px;
+        text-align: start;
+    }
+    
+    .hero-btn {
+        margin: 15px auto;
+        display: inline-block;
+        padding: 15px 50px;
+        background-color: #ffffff;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .hero-btn:hover {
+        background-color: #6ea2db;
+    }
+
+
+    /* Why X-invest Section */
+
+    .why-content {
+        display: block;
+        margin: 0 auto;
+        
+    }
+    
+    .card-content {
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid white;
+        background-color: rgba(46, 48, 59,  0.7);
+        box-shadow: 0 0 30px black outset;
+        max-height: 110vw;
+        height: 70vw;
+        width: 75vw;
+        border-radius: 15px;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .card-content h2 {
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.3rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+    
+    .card-content i {
+        color: white;
+        margin: 20px;
+    }
+    
+    .read-more-button {
+        margin-top: auto;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .read-more-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Investment */
+
+    .investment {
+        flex-wrap: wrap;
+        margin-bottom: 8rem;
+    }
+    
+    .investment h1 {
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .investment-content {
+        display: block;
+        justify-content: space-around;
+    }
+
+    /* Global markets Sections */
+
+    .global {
+        margin-bottom: 10rem;
+    }
+    
+    .global h1 {
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .global-content {
+        display: block;
+        justify-content: center;
+        margin: 1rem;
+    }
+    
+    .global .divide {
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+        max-width: 80%;
+    }
+
+    /* Team Section */
+
+    .team {
+        height: 125vh;
+        margin-bottom: 8rem;
+    }
+    
+    
+    .team-content {
+        display: flex;
+        margin: 0 auto;
+        margin-right: 4rem;
+        
+    }
+    
+    
+    .team h1 {
+        color:white;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        padding-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .team-member h4 {
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .team-member p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .team-member img {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1rem;
+        
+    }
+    
+    /* footer */
+
+    .footer-container {
+        display: block;
+        text-align: center;
+    
+    }
+    
+    .footer-container h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .footer-container h4 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    footer  p {
+        border-top: 1px solid black;
+        color: black;
+        padding-top: 2rem;
+        margin: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+     /* Header */
+     .bg-image {
+        background-image: url('/images/hero-bg2.png');
+        background-size: cover;
+        padding-bottom: 1rem;
+    }
+
+    .logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    .header-container {
+        flex: 1 0 8rem;
+        justify-content: space-evenly;
+        padding: 1rem; 
+        border-bottom: 1px solid white;
+    }
+
+    .header-container a:hover {
+        color: #c4c8ce;
+    }
+    
+    
+    .getstarted-btn {
+        padding: 10px 10px;
+        background-color: #ffffff;
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .getstarted-btn:hover {
+        background-color: #6ea2db;
+    }
+
+
+    /* Hero section */
+    .hero-section {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .hero-content {
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    .hero-content img {
+        width: 100%;
+    }
+    
+    .content-text {
+        margin-left: 1.1rem;
+        margin-right: 1.1rem;
+        margin-top:  3rem;
+    }
+    
+    .content-text h1, p {
+        color: white;
+    }
+    
+    .content-text h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+    }
+    
+    .content-text p {
+        font-size: 15px;
+        text-align: start;
+    }
+    
+    .hero-btn {
+        margin: 15px auto;
+        display: inline-block;
+        padding: 15px 50px;
+        background-color: #ffffff;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .hero-btn:hover {
+        background-color: #6ea2db;
+    }
+
+
+    /* Why X-invest Section */
+
+    .why-content {
+        display: block;
+        margin: 0 auto;
+        
+    }
+    
+    .card-content {
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid white;
+        background-color: rgba(46, 48, 59,  0.7);
+        box-shadow: 0 0 30px black outset;
+        max-height: 110vw;
+        height: 70vw;
+        width: 75vw;
+        border-radius: 15px;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .card-content h2 {
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.3rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+    
+    .card-content i {
+        color: white;
+        margin: 20px;
+    }
+    
+    .read-more-button {
+        margin-top: auto;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .read-more-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Investment */
+
+    .investment {
+        flex-wrap: wrap;
+        margin-bottom: 8rem;
+    }
+    
+    .investment h1 {
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .investment-content {
+        display: block;
+        justify-content: space-around;
+    }
+
+    /* Global markets Sections */
+
+    .global {
+        margin-bottom: 10rem;
+    }
+    
+    .global h1 {
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .global-content {
+        display: block;
+        justify-content: center;
+        margin: 1rem;
+    }
+    
+    .global .divide {
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+        max-width: 80%;
+    }
+
+    /* Team Section */
+
+    .team {
+        background-image: url('/images/team-bg.jpg');
+        background-size: cover;
+        height: 125vh;
+        margin-bottom: 8rem;
+    }
+    
+    
+    .team-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 3rem;
+        
+    }
+    
+    
+    .team h1 {
+        color:white;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        padding-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .team-member h4 {
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .team-member p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .team-member img {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        height: 25vh;
+        
+    }
+    
+    /* footer */
+
+    .footer-container {
+        display: block;
+        text-align: center;
+    
+    }
+    
+    .footer-container h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .footer-container h4 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    footer  p {
+        border-top: 1px solid black;
+        color: black;
+        padding-top: 2rem;
+        margin: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 860px) {
+    /* Header */
+    .bg-image {
+       background-image: url('/images/hero-bg2.png');
+       background-size: cover;
+       padding-bottom: 1rem;
+   }
+
+   .logo {
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 1.2rem;
+   }
+   
+   .header-container {
+       flex: 1 0 8rem;
+       justify-content: space-evenly;
+       padding: 1rem; 
+       border-bottom: 1px solid white;
+   }
+
+   .header-container a:hover {
+       color: #c4c8ce;
+   }
+   
+   
+   .getstarted-btn {
+       padding: 10px 10px;
+       background-color: #ffffff;
+       color: black;
+       font-size: 1rem;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+   
+   .getstarted-btn:hover {
+       background-color: #6ea2db;
+   }
+
+
+   /* Hero section */
+   .hero-section {
+       margin-top: 4rem;
+       margin-bottom: 4rem;
+   }
+   .hero-content {
+       display: block;
+       justify-content: space-evenly;
+   }
+   
+   .hero-content img {
+       width: 100%;
+   }
+   
+   .content-text {
+       margin-left: 1.1rem;
+       margin-right: 1.1rem;
+       margin-top:  3rem;
+   }
+   
+   .content-text h1, p {
+       color: white;
+   }
+   
+   .content-text h1 {
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 3rem;
+   }
+   
+   .content-text p {
+       font-size: 15px;
+       text-align: start;
+   }
+   
+   .hero-btn {
+       margin: 15px auto;
+       display: inline-block;
+       padding: 15px 50px;
+       background-color: #ffffff;
+       color: black;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+   
+   .hero-btn:hover {
+       background-color: #6ea2db;
+   }
+
+
+   /* Why X-invest Section */
+
+   .why-content {
+       display: block;
+       margin: 0 auto;
+       
+   }
+   
+   .card-content {
+       margin: 0 auto;
+       padding: 10px;
+       border: 1px solid white;
+       background-color: rgba(46, 48, 59,  0.7);
+       box-shadow: 0 0 30px black outset;
+       max-height: 110vw;
+       height: 70vw;
+       width: 75vw;
+       border-radius: 15px;
+       margin-bottom: 3rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   
+   .card-content h2 {
+       color: white;
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 1.3rem;
+       margin-top: 5px;
+       margin-bottom: 5px;
+   }
+
+   .card-content p {
+       font-size: 0.9rem;
+   }
+   
+   .card-content i {
+       color: white;
+       margin: 20px;
+   }
+   
+   .read-more-button {
+       margin-top: auto;
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: #007bff;
+       color: white;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+   
+   .read-more-button:hover {
+       background-color: #0056b3;
+   }
+
+   /* Investment */
+
+   .investment {
+       flex-wrap: wrap;
+       margin-bottom: 8rem;
+   }
+   
+   .investment h1 {
+       text-align: center;
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 3rem;
+       margin-top: 1rem;
+       margin-bottom: 3rem;
+   }
+   
+   .investment-content {
+       display: block;
+       justify-content: space-around;
+   }
+   
+   /* Global markets Sections */
+
+   .global {
+       margin-bottom: 10rem;
+   }
+   
+   .global h1 {
+       text-align: center;
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 3rem;
+       margin-top: 3rem;
+       margin-bottom: 3rem;
+   }
+   
+   .global-content {
+       display: block;
+       justify-content: center;
+       margin: 1rem;
+   }
+   
+   .global .divide {
+       margin: 0 auto;
+       border-bottom: 1px solid black;
+       max-width: 80%;
+   }
+
+   /* Team Section */
+
+   .team {
+       background-image: url('/images/team-bg.jpg');
+       background-size: cover;
+       height: 125vh;
+       margin-bottom: 8rem;
+   }
+   
+   
+   .team-content {
+       display: block;
+       margin-left: 5rem;
+       margin-bottom: 5rem;
+   }
+   
+   .team h1 {
+       color:white;
+       text-align: center;
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 3rem;
+       padding-top: 1rem;
+       margin-bottom: 3rem;
+   }
+   
+   .team-member h4 {
+       color: white;
+       font-size: larger;
+       margin-bottom: 1rem;
+   }
+
+   .team-member p {
+       margin-bottom: 1rem;
+   }
+   
+   .team-member img {
+       margin-bottom: 1rem;
+       height: 25vh;
+       
+   }
+   
+   /* footer */
+
+   .footer-container {
+       display: block;
+       text-align: center;
+   
+   }
+   
+   .footer-container h1 {
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 2rem;
+       margin-bottom: 10px;
+   }
+   
+   .footer-container h4 {
+       font-size: 1rem;
+       margin-bottom: 15px;
+   }
+   
+   footer  p {
+    text-align: center;
+       border-top: 1px solid black;
+       color: black;
+       padding-top: 2rem;
+       margin: 1rem;
+   }
+
+}
